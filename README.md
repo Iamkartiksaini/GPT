@@ -6,5 +6,5 @@ Live on : https://gptuidesign.netlify.app/
 
 -Using React
 
--Full Responsive
+-Full Responsive for Desktop
 
