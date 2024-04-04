@@ -1,8 +1,8 @@
 .Intro {
   display: flex;
+  margin-top: 56px;
   flex-wrap: wrap;
   padding: 20px;
-  width: 95%;
 }
 .Intro .text {
   flex-basis: 50%;
@@ -48,7 +48,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
 }
 .connected img {
   height: 30px;
@@ -63,24 +62,41 @@
 }
 
 @media screen and (max-width: 768px) {
-  .Intro img {
+  .Intro {
+    width: 100%;
+  }
+  .Intro > img {
     flex-basis: 100%;
   }
   .Intro .text {
     flex-basis: 100%;
   }
+  .Intro .text h1 {
+    font-size: 1.5rem;
+  }
+  .Intro .text p,
   .connected {
-    text-align: center;
+    font-size: 0.8rem;
+    color: #dadada;
+  }
+
+  .connected {
+    text-align: start;
   }
   .connected img {
+    width: 150px !important;
     object-fit: contain;
   }
   .brands {
-    gap: 10px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-content: flex-start;
   }
   .brands img {
-    flex-basis: 47%;
+    grid-column: span 1;
+    /* flex-basis: 100px; */
     object-fit: scale-down;
   }
 }

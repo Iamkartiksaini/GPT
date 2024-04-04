@@ -50,8 +50,8 @@ const Upcomings = () => {
                 <p>{val.date}</p>
                 <h3>{val.heading}</h3>
                 {val.p !== undefined ? <p>{val.p + " " + val.p}</p> : null}
-                <p>Read Full Article</p>
               </div>
+              <a className="articleLink" >Read Full Article</a>
             </div>
           );
         })}

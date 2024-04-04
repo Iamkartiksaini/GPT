@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    .intro {
+        width: 100%;
+    }
+
+    .contact {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact .logo {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .contact .links {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact .links {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

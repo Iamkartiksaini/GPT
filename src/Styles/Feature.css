@@ -1,11 +1,11 @@
 .Feature {
-  padding: 20px;
+  padding: 100px 20px;
   gap: 50px;
-  height: 70vh;
-  align-items: center;
+  align-items: flex-start;
 }
 .Feature > div:nth-of-type(1) {
   flex-basis: 65%;
+  gap: 15px;
 }
 
 .Feature > div:nth-of-type(1) > * {
@@ -17,6 +17,9 @@
 }
 .Feature > div:nth-of-type(1) > h1 {
   font-size: 34px;
+}
+.Feature > div:nth-of-type(2) {
+  gap: 20px;
 }
 .container h1 {
   font-size: 18px;
@@ -39,8 +42,23 @@
   .Feature div {
     flex-basis: 100% !important;
   }
+  .Feature > div:nth-of-type(1) {
+    gap: 15px;
+  }
+  .Feature > div:nth-of-type(1) h1 {
+    font-size: 1.5rem;
+  }
+
+  .Feature > div:nth-of-type(2) h1 {
+    font-size: 1rem;
+  }
+  .Feature > div:nth-of-type(1) p,
+  .card p {
+    font-size: 0.8rem;
+  }
   .Feature .card {
     flex-basis: 100%;
     flex-direction: column;
+    gap: 5px;
   }
 }

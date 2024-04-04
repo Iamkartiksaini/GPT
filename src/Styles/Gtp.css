@@ -56,20 +56,49 @@
 .About .card:hover::before {
   width: 100%;
 }
-.card p {
+.About .card {
+  padding: 10px 0px;
+}
+.About .card h1 {
+  font-size: 1.6rem;
+}
+.About .card p {
   color: var(--color-text);
+  margin-top: 5px;
 }
 @media screen and (max-width: 768px) {
   .gtp {
     height: max-content;
+    padding: 20px;
+    margin: 0;
+    gap: 20px;
   }
   .gtp .intro {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .gtp .intro > * {
     flex-basis: 100%;
-    text-align: center;
+    text-align: start;
   }
+  .gtp .intro,
+  .gtp .takeLook {
+    gap: 15px;
+  }
+  .About {
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .gtp .intro h1,
+  .takeLook h1,
+  .About h1 {
+    font-size: 1.5rem;
+  }
+  .gtp .intro p,
+  .takeLook p,
+  .About p {
+    font-size: 0.8rem;
+  }
+
   .takeLook {
     background-color: rgba(0, 0, 0, 0.995);
   }

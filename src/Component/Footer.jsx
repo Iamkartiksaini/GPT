@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="link-item">
             <p> Get in touch </p>
             <hr />
-            <p>GPt-3@gmail.com</p>
+            <p>GPT-3.5@gmail.com</p>
             <p>085-132567</p>
             <p>info@payme.net </p>
           </div>
