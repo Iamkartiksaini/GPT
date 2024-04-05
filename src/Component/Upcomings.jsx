@@ -45,11 +45,11 @@ const Upcomings = () => {
         {card.map((val, index) => {
           return (
             <div className="card" key={index}>
-              <img src={val.imgSrc} alt="" />
+              <img loading="lazy" src={val.imgSrc} alt="" />
               <div className="read">
-                <p>{val.date}</p>
+                <p className="upcoming-card-date">{val.date}</p>
                 <h3>{val.heading}</h3>
-                {val.p !== undefined ? <p>{val.p + " " + val.p}</p> : null}
+                {val.p !== undefined ? <p className="upcoming-card-description">{val.p + " " + val.p}</p> : null}
               </div>
               <a className="articleLink" >Read Full Article</a>
             </div>

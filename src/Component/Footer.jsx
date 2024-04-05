@@ -18,7 +18,6 @@ const Footer = () => {
         <div className="links">
           <div className="link-item">
             <p>Links</p>
-            <hr />
             <p>Overons</p>
             <p>Social Media</p>
             <p>Counters</p>
@@ -27,7 +26,6 @@ const Footer = () => {
           {/* <==== Third Column */}
           <div className="link-item">
             <p>Company </p>
-            <hr />
             <p>Terms & Conditions</p>
             <p>Privacy Policy</p>
             <p>Contact</p>
@@ -36,14 +34,13 @@ const Footer = () => {
 
           <div className="link-item">
             <p> Get in touch </p>
-            <hr />
             <p>GPT-3.5@gmail.com</p>
             <p>085-132567</p>
             <p>info@payme.net </p>
           </div>
         </div>
       </div>
-      <p>© 2021 GPT-3. All rights reserved.</p>
+      <p className="copyright">© 2021 GPT-3. All rights reserved.</p>
     </div>
   );
 };

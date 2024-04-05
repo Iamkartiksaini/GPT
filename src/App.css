@@ -1,7 +1,7 @@
 /* UpComing */
 .Upcomings {
   padding: 20px;
-  gap: 20px;
+  gap: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,7 +23,7 @@
   grid-row: span 1;
   background-color: var(--color-blog);
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .Upcomings .card:nth-of-type(1) {
   grid-row: span 2;
@@ -37,11 +37,18 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   /* background: #081529; */
 }
 .Upcomings .card .read p {
   font-size: 12px;
+}
+.Upcomings .upcoming-card-date {
+  color: var(--color-subtext);
+  font-weight: bold;
+}
+.Upcomings .upcoming-card-description {
+  color: #b5b5b5;
 }
 .Upcomings .card a {
   position: absolute;

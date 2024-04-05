@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  gap: 40px;
+  gap: 80px;
   align-items: center;
 }
 .Product > div:nth-of-type(1) {
@@ -19,6 +19,7 @@
 }
 .Product .pro-int {
   flex-basis: 60%;
+  gap: 20px;
 }
 .pro-int h1 {
   color: transparent;
@@ -66,6 +67,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .Product {
+    gap: 40px;
+  }
   .Product div:nth-of-type(1) {
     width: 100%;
     flex-direction: column;
@@ -75,7 +79,7 @@
   }
   .pro-int {
     flex-basis: 100%;
-    gap: 15px;
+    gap: 25px;
   }
   .pro-int h1 {
     font-size: 2rem;
@@ -85,7 +89,8 @@
     text-align: center;
   }
   .CTA h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
   .CTA p {
     font-size: 0.8rem;
