@@ -11,7 +11,7 @@ import shopify from "../assets/shopify.png";
 const Intro = () => {
   return (
     <div className="Intro" id="1">
-      <img src={ai} alt="" />
+      <img loading="lazy" src={ai} alt="" />
       <div className="text">
         <h1>Let’s Build Something amazing with GPT-3 OpenAI</h1>
         <p>
